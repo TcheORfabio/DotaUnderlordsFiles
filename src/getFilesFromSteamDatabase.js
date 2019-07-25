@@ -12,9 +12,9 @@ module.exports = async () => {
     axios.get(urlSynergies),
   ]);
   await Promise.all([
-    fs.writeFile(path.normalize('./src/downloaded files/units.json'), JSON.stringify(units.data, null, 2)),
-    fs.writeFile(path.normalize('./src/downloaded files/items.json'), JSON.stringify(items.data, null, 2)),
-    fs.writeFile(path.normalize('./src/downloaded files/synergies.json'), JSON.stringify(synergies.data, null, 2)),
+    fs.writeFile(path.normalize('./src/downloaded_files/units.json'), JSON.stringify(units.data, null, 2)),
+    fs.writeFile(path.normalize('./src/downloaded_files/items.json'), JSON.stringify(items.data, null, 2)),
+    fs.writeFile(path.normalize('./src/downloaded_files/synergies.json'), JSON.stringify(synergies.data, null, 2)),
   ]);
   return true;
 };
