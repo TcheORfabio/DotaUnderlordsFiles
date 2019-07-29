@@ -1,6 +1,7 @@
 {
   "abaddon": {
     "displayName": "Abaddon",
+    "id": 32,
     "alliances": [
       "Sem Coração",
       "Cavaleiro"
@@ -37,6 +38,7 @@
   },
   "alchemist": {
     "displayName": "Alquimista",
+    "id": 46,
     "alliances": [
       "Mirrado",
       "Bruxo"
@@ -73,6 +75,7 @@
   },
   "antimage": {
     "displayName": "Antimago",
+    "id": 11,
     "alliances": [
       "Elusivo",
       "Caçador de Demônios"
@@ -113,6 +116,7 @@
   },
   "axe": {
     "displayName": "Machado",
+    "id": 1,
     "alliances": [
       "Corpulento",
       "Guerreiro"
@@ -149,6 +153,7 @@
   },
   "bat_rider": {
     "displayName": "Morcegueiro",
+    "id": 9,
     "alliances": [
       "Troll",
       "Cavaleiro"
@@ -185,6 +190,7 @@
   },
   "beastmaster": {
     "displayName": "Senhor das Feras",
+    "id": 14,
     "alliances": [
       "Corpulento",
       "Caçador"
@@ -221,6 +227,7 @@
   },
   "bounty_hunter": {
     "displayName": "Caçador de Recompensas",
+    "id": 6,
     "alliances": [
       "Mirrado",
       "Assassino"
@@ -257,6 +264,7 @@
   },
   "chaos_knight": {
     "displayName": "Cavaleiro do Caos",
+    "id": 21,
     "alliances": [
       "Demônio",
       "Cavaleiro"
@@ -293,6 +301,7 @@
   },
   "clockwerk": {
     "displayName": "Mecanismo",
+    "id": 7,
     "alliances": [
       "Mirrado",
       "Inventor"
@@ -333,6 +342,7 @@
   },
   "crystal_maiden": {
     "displayName": "Donzela Cristalina",
+    "id": 13,
     "alliances": [
       "Humano",
       "Mago"
@@ -369,6 +379,7 @@
   },
   "disruptor": {
     "displayName": "Disruptor",
+    "id": 47,
     "alliances": [
       "Corpulento",
       "Xamã",
@@ -406,6 +417,7 @@
   },
   "doom": {
     "displayName": "Condenador",
+    "id": 40,
     "alliances": [
       "Demônio",
       "Guerreiro"
@@ -442,6 +454,7 @@
   },
   "dragon_knight": {
     "displayName": "Cavaleiro Dragão",
+    "id": 49,
     "alliances": [
       "Humano",
       "Dragão",
@@ -479,6 +492,7 @@
   },
   "drow_ranger": {
     "displayName": "Patrulheira Drow",
+    "id": 5,
     "alliances": [
       "Sem Coração",
       "Caçador"
@@ -515,6 +529,7 @@
   },
   "enchantress": {
     "displayName": "Encantadora",
+    "id": 2,
     "alliances": [
       "Selvagem",
       "Druida"
@@ -551,6 +566,7 @@
   },
   "enigma": {
     "displayName": "Enigma",
+    "id": 54,
     "alliances": [
       "Primordial",
       "Xamã"
@@ -587,6 +603,7 @@
   },
   "furion": {
     "displayName": "Profeta da Natureza",
+    "id": 25,
     "alliances": [
       "Elusivo",
       "Druida"
@@ -623,6 +640,7 @@
   },
   "gyrocopter": {
     "displayName": "Girocóptero",
+    "id": 51,
     "alliances": [
       "Mortífero",
       "Inventor"
@@ -659,6 +677,7 @@
   },
   "juggernaut": {
     "displayName": "Implacável",
+    "id": 15,
     "alliances": [
       "Corpulento",
       "Guerreiro"
@@ -699,6 +718,7 @@
   },
   "keeper_of_the_light": {
     "displayName": "Guardião da Luz",
+    "id": 43,
     "alliances": [
       "Humano",
       "Mago"
@@ -735,6 +755,7 @@
   },
   "kunkka": {
     "displayName": "Kunkka",
+    "id": 41,
     "alliances": [
       "Humano",
       "Guerreiro"
@@ -771,6 +792,7 @@
   },
   "lich": {
     "displayName": "Lich",
+    "id": 52,
     "alliances": [
       "Sem Coração",
       "Mago"
@@ -807,6 +829,7 @@
   },
   "lina": {
     "displayName": "Lina",
+    "id": 39,
     "alliances": [
       "Humano",
       "Mago"
@@ -843,6 +866,7 @@
   },
   "lone_druid": {
     "displayName": "Druida Solitário",
+    "id": 50,
     "alliances": [
       "Selvagem",
       "Druida"
@@ -879,6 +903,7 @@
   },
   "luna": {
     "displayName": "Luna",
+    "id": 24,
     "alliances": [
       "Elusivo",
       "Cavaleiro"
@@ -915,6 +940,7 @@
   },
   "lycan": {
     "displayName": "Lican",
+    "id": 26,
     "alliances": [
       "Humano",
       "Selvagem",
@@ -952,6 +978,7 @@
   },
   "medusa": {
     "displayName": "Medusa",
+    "id": 48,
     "alliances": [
       "Escamado",
       "Caçador"
@@ -992,6 +1019,7 @@
   },
   "morphling": {
     "displayName": "Morfoso",
+    "id": 23,
     "alliances": [
       "Primordial",
       "Assassino"
@@ -1028,6 +1056,7 @@
   },
   "necrophos": {
     "displayName": "Nécrofos",
+    "id": 44,
     "alliances": [
       "Sem Coração",
       "Bruxo"
@@ -1064,6 +1093,7 @@
   },
   "ogre_magi": {
     "displayName": "Ogro Magi",
+    "id": 3,
     "alliances": [
       "Pacto de Sangue",
       "Mago"
@@ -1100,6 +1130,7 @@
   },
   "omniknight": {
     "displayName": "Onitemplário",
+    "id": 28,
     "alliances": [
       "Humano",
       "Cavaleiro"
@@ -1136,6 +1167,7 @@
   },
   "phantom_assassin": {
     "displayName": "Assassina Fantasma",
+    "id": 31,
     "alliances": [
       "Elusivo",
       "Assassino"
@@ -1172,6 +1204,7 @@
   },
   "puck": {
     "displayName": "Puck",
+    "id": 18,
     "alliances": [
       "Elusivo",
       "Dragão",
@@ -1209,6 +1242,7 @@
   },
   "queen_of_pain": {
     "displayName": "Rainha da Dor",
+    "id": 17,
     "alliances": [
       "Demônio",
       "Assassino"
@@ -1245,6 +1279,7 @@
   },
   "razor": {
     "displayName": "Razor",
+    "id": 29,
     "alliances": [
       "Primordial",
       "Mago"
@@ -1281,6 +1316,7 @@
   },
   "sand_king": {
     "displayName": "Rei da Areia",
+    "id": 33,
     "alliances": [
       "Selvagem",
       "Assassino"
@@ -1321,6 +1357,7 @@
   },
   "shadow_fiend": {
     "displayName": "Terror das Sombras",
+    "id": 38,
     "alliances": [
       "Demônio",
       "Bruxo"
@@ -1357,6 +1394,7 @@
   },
   "shadow_shaman": {
     "displayName": "Xamã das Sombras",
+    "id": 8,
     "alliances": [
       "Troll",
       "Xamã"
@@ -1393,6 +1431,7 @@
   },
   "slardar": {
     "displayName": "Slardar",
+    "id": 20,
     "alliances": [
       "Escamado",
       "Guerreiro"
@@ -1429,6 +1468,7 @@
   },
   "slark": {
     "displayName": "Slark",
+    "id": 34,
     "alliances": [
       "Escamado",
       "Assassino"
@@ -1473,6 +1513,7 @@
   },
   "sniper": {
     "displayName": "Franco-atirador",
+    "id": 35,
     "alliances": [
       "Mortífero",
       "Caçador"
@@ -1513,6 +1554,7 @@
   },
   "techies": {
     "displayName": "Techies",
+    "id": 55,
     "alliances": [
       "Mirrado",
       "Inventor"
@@ -1549,6 +1591,7 @@
   },
   "templar_assassin": {
     "displayName": "Assassina Templária",
+    "id": 45,
     "alliances": [
       "Elusivo",
       "Assassino"
@@ -1585,6 +1628,7 @@
   },
   "terrorblade": {
     "displayName": "Terror",
+    "id": 36,
     "alliances": [
       "Demônio",
       "Caçador de Demônios"
@@ -1625,6 +1669,7 @@
   },
   "tidehunter": {
     "displayName": "Caçador da Maré",
+    "id": 53,
     "alliances": [
       "Escamado",
       "Guerreiro"
@@ -1661,6 +1706,7 @@
   },
   "timbersaw": {
     "displayName": "Serrote",
+    "id": 16,
     "alliances": [
       "Mirrado",
       "Inventor"
@@ -1701,6 +1747,7 @@
   },
   "tinker": {
     "displayName": "Inventor",
+    "id": 10,
     "alliances": [
       "Mirrado",
       "Inventor"
@@ -1737,6 +1784,7 @@
   },
   "tiny": {
     "displayName": "Pedrinha",
+    "id": 12,
     "alliances": [
       "Primordial",
       "Guerreiro"
@@ -1773,6 +1821,7 @@
   },
   "treant_protector": {
     "displayName": "Protetor Arvoroso",
+    "id": 22,
     "alliances": [
       "Elusivo",
       "Druida"
@@ -1809,6 +1858,7 @@
   },
   "troll_warlord": {
     "displayName": "Comandante Troll",
+    "id": 42,
     "alliances": [
       "Troll",
       "Guerreiro"
@@ -1845,6 +1895,7 @@
   },
   "tusk": {
     "displayName": "Marfim",
+    "id": 4,
     "alliances": [
       "Selvagem",
       "Guerreiro"
@@ -1881,6 +1932,7 @@
   },
   "venomancer": {
     "displayName": "Venomante",
+    "id": 27,
     "alliances": [
       "Selvagem",
       "Bruxo"
@@ -1917,6 +1969,7 @@
   },
   "viper": {
     "displayName": "Víbora",
+    "id": 37,
     "alliances": [
       "Dragão",
       "Assassino"
@@ -1953,6 +2006,7 @@
   },
   "wind_ranger": {
     "displayName": "Patrulheira do Vento",
+    "id": 30,
     "alliances": [
       "Elusivo",
       "Caçador"
@@ -1989,6 +2043,7 @@
   },
   "witch_doctor": {
     "displayName": "Curandeiro",
+    "id": 19,
     "alliances": [
       "Troll",
       "Bruxo"
@@ -2025,6 +2080,7 @@
   },
   "pudge": {
     "displayName": "Pudge",
+    "id": 81,
     "alliances": [
       "Sem Coração",
       "Guerreiro"
@@ -2061,6 +2117,7 @@
   },
   "warlock": {
     "displayName": "Bruxo",
+    "id": 82,
     "alliances": [
       "Pacto de Sangue",
       "Bruxo"
@@ -2097,6 +2154,7 @@
   },
   "bloodseeker": {
     "displayName": "Sanguinário",
+    "id": 83,
     "alliances": [
       "Humano",
       "Assassino"
@@ -2133,6 +2191,7 @@
   },
   "arc_warden": {
     "displayName": "Guardião do Arco",
+    "id": 84,
     "alliances": [
       "Primordial",
       "Xamã"
@@ -2173,6 +2232,7 @@
   },
   "mirana": {
     "displayName": "Mirana",
+    "id": 86,
     "alliances": [
       "Elusivo",
       "Caçador"
@@ -2209,6 +2269,7 @@
   },
   "venomancer_plague_ward": {
     "displayName": "Sentinela de Praga",
+    "id": 56,
     "alliances": [
       "Selvagem"
     ],
@@ -2238,6 +2299,7 @@
   },
   "natures_prophet_tree": {
     "displayName": "Arvorinha",
+    "id": 58,
     "alliances": [
       "Druida"
     ],
@@ -2267,6 +2329,7 @@
   },
   "lone_druid_bear": {
     "displayName": "Espírito Urso",
+    "id": 59,
     "alliances": [
       "Selvagem",
       "Druida"
@@ -2302,6 +2365,7 @@
   },
   "lycan_wolf_spawns": {
     "displayName": "Lobo Selvagem",
+    "id": 60,
     "alliances": [
       "Selvagem",
       "Caçador"
@@ -2332,6 +2396,7 @@
   },
   "techies_bomb_unit": {
     "displayName": "Explosivos dos Keen",
+    "id": 61,
     "alliances": null,
     "abilities": null,
     "draftTier": 0,
@@ -2341,6 +2406,7 @@
   },
   "neutral_melee": {
     "displayName": "Criatura Guerreira",
+    "id": 62,
     "alliances": null,
     "abilities": null,
     "armor": 0,
@@ -2355,6 +2421,7 @@
   },
   "neutral_melee_mega": {
     "displayName": "Mega Criatura",
+    "id": 63,
     "alliances": null,
     "abilities": null,
     "armor": 0,
@@ -2369,6 +2436,7 @@
   },
   "neutral_ranged": {
     "displayName": "Criatura Maga",
+    "id": 64,
     "alliances": null,
     "abilities": null,
     "armor": 0,
@@ -2383,6 +2451,7 @@
   },
   "neutral_golem_a": {
     "displayName": "Golenzão",
+    "id": 65,
     "alliances": [
       null
     ],
@@ -2399,6 +2468,7 @@
   },
   "neutral_golem_b": {
     "displayName": "Golenzinho",
+    "id": 66,
     "alliances": [
       null
     ],
@@ -2415,6 +2485,7 @@
   },
   "neutral_wolf_big": {
     "displayName": "Lobão",
+    "id": 67,
     "alliances": [
       null
     ],
@@ -2431,6 +2502,7 @@
   },
   "neutral_wolf_small": {
     "displayName": "Lobinho",
+    "id": 68,
     "alliances": [
       null
     ],
@@ -2447,6 +2519,7 @@
   },
   "neutral_bear_a": {
     "displayName": "Tomatão",
+    "id": 69,
     "alliances": [
       null
     ],
@@ -2463,6 +2536,7 @@
   },
   "neutral_bear_b": {
     "displayName": "Batatão",
+    "id": 70,
     "alliances": [
       null
     ],
@@ -2479,6 +2553,7 @@
   },
   "neutral_vulture_a": {
     "displayName": "Asa Selvagem de Revtel",
+    "id": 71,
     "alliances": [
       null
     ],
@@ -2496,6 +2571,7 @@
   },
   "neutral_vulture_b": {
     "displayName": "Filhote de Asa Selvagem",
+    "id": 72,
     "alliances": [
       null
     ],
@@ -2513,6 +2589,7 @@
   },
   "neutral_thunder_lizard_big": {
     "displayName": "Couro-de-Trovão Alfa",
+    "id": 73,
     "alliances": [
       null
     ],
@@ -2535,6 +2612,7 @@
   },
   "neutral_thunder_lizard_small": {
     "displayName": "Couro-de-Trovão",
+    "id": 74,
     "alliances": [
       null
     ],
@@ -2557,6 +2635,7 @@
   },
   "neutral_black_dragon": {
     "displayName": "Dragão Negro",
+    "id": 75,
     "alliances": [
       null
     ],
@@ -2578,6 +2657,7 @@
   },
   "neutral_troll_dark_a": {
     "displayName": "Troll Negro Amigo",
+    "id": 76,
     "alliances": [
       null
     ],
@@ -2594,6 +2674,7 @@
   },
   "neutral_troll_dark_b": {
     "displayName": "Troll Negro Chefão",
+    "id": 77,
     "alliances": [
       null
     ],
@@ -2610,6 +2691,7 @@
   },
   "neutral_troll_dark_frost": {
     "displayName": "Troll Negro Sacerdote",
+    "id": 78,
     "alliances": [
       null
     ],
@@ -2626,6 +2708,7 @@
   },
   "neutral_nian": {
     "displayName": "Monstro Temporal",
+    "id": 79,
     "alliances": [
       null
     ],
@@ -2648,6 +2731,7 @@
   },
   "neutral_roshan": {
     "displayName": "Roshan",
+    "id": 80,
     "alliances": null,
     "abilities": [
       {
@@ -2672,6 +2756,7 @@
   },
   "eidolon": {
     "displayName": "Aparição",
+    "id": 87,
     "alliances": [
       "Primordial"
     ],

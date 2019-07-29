@@ -1,4 +1,4 @@
-/node_modules
-/src/data_files
-/src/downloaded_files
+node_modules/
+src/data_files/
+src/downloaded_files/
 

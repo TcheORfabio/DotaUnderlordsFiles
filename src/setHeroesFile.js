@@ -3,9 +3,10 @@
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
-const units = require('./downloaded_files/units.json');
 
 module.exports = async (language) => {
+  const unitsUrl = 'https://raw.githubusercontent.com/SteamDatabase/GameTracking-Underlords/master/game/dac/pak01_dir/scripts/units.json';
+
   const localizationAbilitiesUrl = `https://raw.githubusercontent.com/SteamDatabase/GameTracking-Underlords/master/game/dac/pak01_dir/resource/localization/dac_abilities_${language}.txt`;
 
   const localizationNamesUrl = `https://raw.githubusercontent.com/SteamDatabase/GameTracking-Underlords/master/game/dac/panorama/localization/dac_${language}.txt`;
@@ -15,37 +16,35 @@ module.exports = async (language) => {
   const [
     { data: abilitiesDescFile },
     { data: dacFile },
-    { data: abilitiesFile }] = await Promise.all([
+    { data: abilitiesFile },
+    { data: units }] = await Promise.all([
     axios.get(localizationAbilitiesUrl),
     axios.get(localizationNamesUrl),
     axios.get(abilitiesUrl),
+    axios.get(unitsUrl),
   ]);
 
-  let abilities = abilitiesDescFile.match(/"([^"]*)"/img)
-    .map(string => string.replace(/"/g, ''));
-
-  abilities.splice(0, 4);
-
-  abilities = abilities.reduce((obj, value, index, array) => {
-    if (value.search(/^\s*dac_/i) !== -1) {
-      obj[value] = array[index + 1];
+  const abilities = abilitiesDescFile.match(/"([^"]*)"/img)
+    .map(string => string.replace(/"/g, ''))
+    .slice(4)
+    .reduce((obj, value, index, array) => {
+      if (value.search(/^\s*dac_/i) !== -1) {
+        obj[value] = array[index + 1];
+        return obj;
+      }
       return obj;
-    }
-    return obj;
-  }, {});
+    }, {});
 
-  let dac = dacFile.match(/"([^"]*)"/img)
-    .map(string => string.replace(/"/g, ''));
-
-  dac.splice(0, 3);
-
-  dac = dac.reduce((obj, value, index, array) => {
-    if (value.search(/^\s*dac_/i) !== -1) {
-      obj[value] = array[index + 1];
+  const dac = dacFile.match(/"([^"]*)"/img)
+    .map(string => string.replace(/"/g, ''))
+    .slice(3)
+    .reduce((obj, value, index, array) => {
+      if (value.search(/^\s*dac_/i) !== -1) {
+        obj[value] = array[index + 1];
+        return obj;
+      }
       return obj;
-    }
-    return obj;
-  }, {});
+    }, {});
 
   const heroes = Object.entries(units)
     .map((hero) => {
@@ -81,6 +80,7 @@ module.exports = async (language) => {
 
       return [hero[0], {
         displayName,
+        id: hero[1].id,
         alliances,
         abilities: abilitiesArray,
         armor: hero[1].armor,
@@ -101,6 +101,7 @@ module.exports = async (language) => {
       return obj;
     }, {});
 
-  fs.writeFile(path.normalize('./src/data_files/heroes.json'), JSON.stringify(heroes, null, 2));
+  await fs.writeFile(path.normalize(`./src/data_files/heroes_${language}.json`), JSON.stringify(heroes, null, 2));
   console.log('Arquivo heroes.json atualizado com sucesso!');
+  return true;
 };
