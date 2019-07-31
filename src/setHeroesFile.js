@@ -1,5 +1,9 @@
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-param-reassign */
+/**
+ * TODOs:
+ *  Checar neutros e invocações novamente
+ */
 const fs = require('fs').promises;
 const path = require('path');
 const axios = require('axios');
@@ -39,7 +43,7 @@ module.exports = async (language) => {
     .map(string => string.replace(/"/g, ''))
     .slice(3)
     .reduce((obj, value, index, array) => {
-      if (value.search(/^\s*dac_/i) !== -1) {
+      if (value.search(/^\s*dac_hero_type|^\s*dac_hero_name/i) !== -1) {
         obj[value] = array[index + 1];
         return obj;
       }
@@ -50,28 +54,31 @@ module.exports = async (language) => {
     .map((hero) => {
       const abilitiesArray = hero[1].abilities
         ? hero[1].abilities.map((ability) => {
-          if (!ability) return '';
-          // Substituindo as partes das descrições de habilidade que variam de acordo com variáveis
-          // ex.: { s: attack_speed_increase }
-          const regex = new RegExp(/\{s:(\w*)\}/mi);
-          let skillDescription = abilities[`dac_ability_${ability}_Description`] || '';
-          let descriptionReplaced = '';
-          let replaceStrings = skillDescription.search(regex);
-          while (replaceStrings !== -1) {
-            const match = skillDescription.match(regex) || [null];
-            const replace = abilitiesFile[`${ability}`][`${match[1]}`];
-            descriptionReplaced = skillDescription.replace(match[0], JSON.stringify(replace));
-            skillDescription = descriptionReplaced;
-            replaceStrings = skillDescription.search(regex);
-          }
+          const description = (abilities[`dac_ability_${ability}_Description`] || abilities[`dac_ability_${ability}_description`])
+            .replace(/\{s:(\w*)\}/ig, (match, p1) => JSON.stringify(abilitiesFile[ability][p1]));
 
           return {
             name: abilities[`dac_ability_${ability}`],
-            description: descriptionReplaced,
+            description,
+            lore: abilities[`dac_ability_${ability}_Lore`],
+            cooldown: abilitiesFile[ability].cooldown,
           };
         })
         : null;
 
+      const extraAbilities = hero[1].extra_abilities
+        ? hero[1].extra_abilities.map((ability) => {
+          const description = (abilities[`dac_ability_${ability}_Description`] || abilities[`dac_ability_${ability}_description`])
+            .replace(/\{s:(\w*)\}/ig, (match, p1) => JSON.stringify(abilitiesFile[ability][p1]));
+
+          return {
+            name: abilities[`dac_ability_${ability}`],
+            description,
+            lore: abilities[`dac_ability_${ability}_Lore`],
+            cooldown: abilitiesFile[ability].cooldown,
+          };
+        })
+        : null;
 
       const displayName = dac[hero[1].displayName.substring(1)];
       const alliances = hero[1].keywords
@@ -84,6 +91,7 @@ module.exports = async (language) => {
         alliances,
         abilities: abilitiesArray,
         armor: hero[1].armor,
+        extra_abilities: extraAbilities || undefined,
         attackRange: hero[1].attackRange,
         attackRate: hero[1].attackRate,
         damageMin: hero[1].damageMin,
@@ -102,6 +110,6 @@ module.exports = async (language) => {
     }, {});
 
   await fs.writeFile(path.normalize(`./src/data_files/heroes_${language}.json`), JSON.stringify(heroes, null, 2));
-  console.log('Arquivo heroes.json atualizado com sucesso!');
+  console.log(`Arquivo heroes_${language}.json atualizado com sucesso!`);
   return true;
 };

@@ -53,6 +53,6 @@ module.exports = async (language) => {
     }, {});
 
   await fs.writeFile(path.normalize(`./src/data_files/alliances_${language}.json`), JSON.stringify(alliances, null, 2));
-  console.log('Arquivo alliances.json atualizado com sucesso!');
+  console.log(`Arquivo alliances_${language}.json atualizado com sucesso!`);
   return true;
 };

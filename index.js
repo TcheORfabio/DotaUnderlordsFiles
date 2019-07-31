@@ -2,12 +2,12 @@
 const setHeroesFiles = require('./src/setHeroesFile');
 const setItemsFiles = require('./src/setItemsFile');
 const setAlliancesFile = require('./src/setAlliancesFile');
+const languages = require('./src/languages');
 
 (async function main() {
-  const language = 'brazilian';
-  await Promise.all([
-    setHeroesFiles(language),
-    setItemsFiles(language),
-    setAlliancesFile(language),
-  ]);
+  languages.forEach(async lang => Promise.all([
+    setHeroesFiles(lang),
+    setItemsFiles(lang),
+    setAlliancesFile(lang),
+  ]));
 }());
