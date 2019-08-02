@@ -1,5 +1,6 @@
 node_modules/
-src/data_files/
+src/data_files/*
+!src/data_files/.gitkeep
 src/downloaded_files/
 .vscode/
 
